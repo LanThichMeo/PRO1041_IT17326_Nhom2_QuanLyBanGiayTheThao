@@ -23,7 +23,7 @@ import lombok.ToString;
 
 /**
  *
- * @author PC
+ * @author PC chienđqph25320
  */
 @Entity
 @Table(name = " ThuongHieu")

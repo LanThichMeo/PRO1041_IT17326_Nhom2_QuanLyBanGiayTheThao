@@ -14,7 +14,7 @@ import org.hibernate.query.Query;
 
 /**
  *
- * @author PC
+ * @author PC chiendqph25320
  */
 public class ThuongHieuRepository {
 
