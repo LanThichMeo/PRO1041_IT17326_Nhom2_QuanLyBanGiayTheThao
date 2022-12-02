@@ -14,7 +14,7 @@ import org.hibernate.Transaction;
 
 /**
  *
- * @author PC
+ * @author haodqph27423
  */
 public class SizeRepository {
 

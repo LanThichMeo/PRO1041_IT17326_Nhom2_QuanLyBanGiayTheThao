@@ -23,7 +23,7 @@ import lombok.ToString;
 
 /**
  *
- * @author PC
+ * @author haodqph27423
  */
 @Entity
 @Table(name = "Size")
@@ -48,5 +48,6 @@ public class Size implements Serializable {
     @OneToMany(mappedBy = "size", cascade = CascadeType.ALL,
             fetch = FetchType.LAZY)
     private List<ChiTietSP> listChiTietSP;
+   
     
 }

@@ -15,7 +15,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author PC
+ * @author haodqph27423
  */
 public class ViewSize extends javax.swing.JFrame {
 

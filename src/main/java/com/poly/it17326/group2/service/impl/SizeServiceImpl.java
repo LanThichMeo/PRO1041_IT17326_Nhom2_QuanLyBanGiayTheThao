@@ -13,7 +13,7 @@ import java.util.List;
 
 /**
  *
- * @author PC
+ * @author haodqph27423
  */
 public class SizeServiceImpl implements ICommon<ViewSizeReponse, Size> {
 
