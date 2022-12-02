@@ -6,7 +6,7 @@ import com.poly.it17326.group2.response.ViewChucVuResponse;
 import java.util.ArrayList;
 import java.util.List;
 import com.poly.it17326.group2.service.ICommon;
-
+//hocnvph27417
 public class ChucVuServiceImpl implements ICommon<ViewChucVuResponse, ChucVu>{
 
     private ChucVuRepository chucVuRepository = new ChucVuRepository();
