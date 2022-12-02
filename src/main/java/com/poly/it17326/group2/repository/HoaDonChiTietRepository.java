@@ -13,7 +13,7 @@ import org.hibernate.Transaction;
 
 /**
  *
- * @author DELL
+ * @author tuannvph27467
  */
 public class HoaDonChiTietRepository {
 

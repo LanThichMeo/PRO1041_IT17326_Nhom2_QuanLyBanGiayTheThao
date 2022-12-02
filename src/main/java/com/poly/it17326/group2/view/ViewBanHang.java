@@ -23,6 +23,8 @@ import java.util.Random;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
+// tuannvph27467
+
 public class ViewBanHang extends javax.swing.JFrame {
 
     private DefaultTableModel dtmHoaDon = new DefaultTableModel();

@@ -22,7 +22,7 @@ import lombok.ToString;
 
 /**
  *
- * @author admin
+ * @author tuannvph27467
  */
 @Entity
 @Table(name = "HoaDonChiTiet")
@@ -32,10 +32,6 @@ import lombok.ToString;
 @NoArgsConstructor
 @AllArgsConstructor
 public class HoaDonChiTiet implements Serializable {
-
-//    @Id
-//    @GeneratedValue(strategy = GenerationType.IDENTITY)
-//    private String id;
         
     @Id
     @ManyToOne

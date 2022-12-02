@@ -15,7 +15,7 @@ import org.hibernate.Transaction;
 
 /**
  *
- * @author admin
+ * @author tuannvph27467
  */
 public class BanHangRepository {
 

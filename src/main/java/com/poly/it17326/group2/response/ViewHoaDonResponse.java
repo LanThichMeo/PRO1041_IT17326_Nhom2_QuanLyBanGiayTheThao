@@ -11,13 +11,13 @@ import lombok.ToString;
 
 /**
  *
- * @author DELL
+ * @author tuannvph27467
  */
 @Getter
 @Setter
 @ToString
 public class ViewHoaDonResponse {
-    
+
     private String maHD;
     private String ngayTao;
     private String tenTaiKhoan;
@@ -32,10 +32,11 @@ public class ViewHoaDonResponse {
         this.tenTaiKhoan = hoaDon.getTaiKhoan().getTenTaiKhoan();
         this.trangThai = hoaDon.getTrangThai().getTenTrangThai();
     }
-    public String htTrangThai(){
-        if(this.trangThai == 1){
+
+    public String htTrangThai() {
+        if (this.trangThai == 1) {
             return "Đã thanh toán";
-        }else if(this.trangThai == 0){
+        } else if (this.trangThai == 0) {
             return "Đã hủy";
         }
         return "Chờ thanh toán";
