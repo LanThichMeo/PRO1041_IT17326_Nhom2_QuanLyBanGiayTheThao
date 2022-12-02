@@ -14,7 +14,7 @@ import com.poly.it17326.group2.service.ICommon;
 
 /**
  *
- * @author nguye
+ * @author anhntnph27418
  */
 public class ViewDeGiay extends javax.swing.JFrame {
 

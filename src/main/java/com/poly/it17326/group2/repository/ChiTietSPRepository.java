@@ -19,7 +19,7 @@ import org.hibernate.query.Query;
 
 /**
  *
- * @author DELL
+ * @author anhntnph27418
  */
 public class ChiTietSPRepository {
 

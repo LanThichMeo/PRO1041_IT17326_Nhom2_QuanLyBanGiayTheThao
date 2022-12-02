@@ -13,7 +13,7 @@ import org.hibernate.Transaction;
 
 /**
  *
- * @author DELL
+ * @author anhntnph27418
  */
 public class SanPhamRepository {
     
