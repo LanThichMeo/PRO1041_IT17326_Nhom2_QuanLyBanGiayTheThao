@@ -13,7 +13,7 @@ import java.util.List;
 
 /**
  *
- * @author bachmb
+ * @author phuongktph26630
  */
 public class ViewMauSacServiceImpl implements ICommon<ViewMauSacReponse, MauSac> {
 

@@ -15,7 +15,7 @@ import org.hibernate.Transaction;
 
 /**
  *
- * @author PC
+ * @author phuongktph26630
  */
 public class MauSacRepository {
 

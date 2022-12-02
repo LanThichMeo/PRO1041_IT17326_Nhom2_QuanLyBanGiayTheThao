@@ -14,7 +14,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author bachmb
+ * @author phuongktph26630
  */
 public class ViewMauSac extends javax.swing.JFrame {
 
