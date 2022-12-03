@@ -35,9 +35,9 @@ public class ViewSanPhamResponse {
         
     public String hTTrangThai(){
         if(trangThai==1){
-            return "Còn Kinh Doanh";
+            return "Đang hoạt động";
         }else{
-            return "Không còn hoạt động";
+            return "Dừng hoạt động";
         }
     }
     

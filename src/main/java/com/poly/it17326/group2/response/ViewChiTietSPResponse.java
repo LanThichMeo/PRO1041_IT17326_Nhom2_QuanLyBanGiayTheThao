@@ -55,9 +55,9 @@ public class ViewChiTietSPResponse {
      
     public String hTTrangThai(){
         if(trangThai==1){
-            return "Đang hoạt động";
+            return "Còn Kinh Doanh";
         }else{
-            return "Dừng hoạt động";
+            return "Không còn hoạt động";
         }
     }
 }

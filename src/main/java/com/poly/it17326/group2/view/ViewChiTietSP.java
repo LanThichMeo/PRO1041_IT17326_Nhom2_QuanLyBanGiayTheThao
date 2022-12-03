@@ -1,5 +1,6 @@
 package com.poly.it17326.group2.view;
 //
+
 import com.poly.it17326.group2.domainmodel.ChiTietSP;
 import com.poly.it17326.group2.domainmodel.DeGiay;
 import com.poly.it17326.group2.domainmodel.MauSac;
@@ -577,6 +578,12 @@ public class ViewChiTietSP extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(this, check().toString());
             return;
         }
+        for (ViewChiTietSPResponse viewCTSP : chiTietSPService.getAll()) {
+            if (viewCTSP.getMaSP().equals(cbbMaSP.getSelectedItem())) {
+                JOptionPane.showMessageDialog(this, "Sản phẩm đã tồn tại");
+                return;
+            }
+        }
         int maSP = cbbMaSP.getSelectedIndex();
         SanPham sanPham = chiTietSPService.getSP().get(maSP);
         ctsp.setSanPham(sanPham);
@@ -615,6 +622,7 @@ public class ViewChiTietSP extends javax.swing.JFrame {
         } else {
             JOptionPane.showMessageDialog(this, "Thêm thất bại");
         }
+
     }//GEN-LAST:event_btnAddActionPerformed
 
     private void txtGiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtGiaActionPerformed
@@ -770,7 +778,7 @@ public class ViewChiTietSP extends javax.swing.JFrame {
     }//GEN-LAST:event_btnNextActionPerformed
 
     private void cbbMaSPMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cbbMaSPMouseClicked
-        
+
     }//GEN-LAST:event_cbbMaSPMouseClicked
 
     private void cbbMaSPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbbMaSPActionPerformed
@@ -781,7 +789,7 @@ public class ViewChiTietSP extends javax.swing.JFrame {
     }//GEN-LAST:event_cbbMaSPActionPerformed
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-        
+
     }//GEN-LAST:event_jTextField1ActionPerformed
 
     /**

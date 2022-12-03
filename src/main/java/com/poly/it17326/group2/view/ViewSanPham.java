@@ -354,16 +354,23 @@ public class ViewSanPham extends javax.swing.JFrame {
         sp.setTenAnh(txtTenAnh.getText());
         sp.setUrl(txtURL.getText());
         sp.setNgayTao(txtNgayTao.getText());
-        sp.setNgaySua(txtNgaySua.getText());
+        Date date = new Date();
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat();
+        simpleDateFormat.applyPattern("YYYY-MM-dd");
+        String format = simpleDateFormat.format(date);
+        sp.setNgaySua(format);
         
-        int trangThai = cbbTrangThai.getSelectedIndex();
-        if (trangThai == 1) {
+        int trangThai = 1;
+        if (cbbTrangThai.getSelectedItem().equals("Đang hoạt động")) {
             trangThai = 1;
+        }else{
+            trangThai = 0;
         }
         sp.setTrangThai(trangThai);
+        ICommon<ViewSanPhamResponse,SanPham> spService = new SanPhamServiceImpl();
         if (sanPhamService.update(sp)) {
             JOptionPane.showMessageDialog(this, "Sửa thành công");
-            loadTable(sanPhamService.getAll());
+            loadTable(spService.getAll());
         } else {
             JOptionPane.showMessageDialog(this, "Sửa thất bại");
         }
