@@ -33,4 +33,12 @@ public class ViewSanPhamResponse {
         this.trangThai = sanPham.getTrangThai();
     }
         
+    public String hTTrangThai(){
+        if(trangThai==1){
+            return "Còn Kinh Doanh";
+        }else{
+            return "Không còn hoạt động";
+        }
+    }
+    
 }

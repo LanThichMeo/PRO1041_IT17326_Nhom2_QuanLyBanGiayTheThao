@@ -7,7 +7,7 @@ package com.poly.it17326.group2.view;
 import com.poly.it17326.group2.domainmodel.ThuongHieu;
 import com.poly.it17326.group2.response.ViewThuongHieuReposponse;
 import com.poly.it17326.group2.service.ICommon;
-import com.poly.it17326.group2.service.impl.ViewThuongHieuServiceImpl;
+import com.poly.it17326.group2.service.impl.ThuongHieuServiceImpl;
 import java.util.List;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
@@ -18,7 +18,7 @@ import javax.swing.table.DefaultTableModel;
  */
 public class viewThuongHieu extends javax.swing.JFrame {
     
-    private ICommon<ViewThuongHieuReposponse,ThuongHieu> thuongHieuService=new ViewThuongHieuServiceImpl();
+    private ICommon<ViewThuongHieuReposponse,ThuongHieu> thuongHieuService=new ThuongHieuServiceImpl();
 
 
     /**

@@ -7,7 +7,7 @@ import com.poly.it17326.group2.service.ICommon;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ViewNhaCungCapServiceImpl implements ICommon<ViewNhaCungCapResponse, NhaCungCap> {
+public class NhaCungCapServiceImpl implements ICommon<ViewNhaCungCapResponse, NhaCungCap> {
 
     private NhaCungCapRepository repository = new NhaCungCapRepository();
 

@@ -6,7 +6,7 @@ package com.poly.it17326.group2.view;
 
 import com.poly.it17326.group2.domainmodel.DeGiay;
 import com.poly.it17326.group2.response.ViewDeGiayResponse;
-import com.poly.it17326.group2.service.impl.ViewDeGiayServiceImpl;
+import com.poly.it17326.group2.service.impl.DeGiayServiceImpl;
 import java.util.List;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
@@ -21,7 +21,7 @@ public class ViewDeGiay extends javax.swing.JFrame {
     /**
      * Creates new form ViewDeGiay
      */
-    private ICommon<ViewDeGiayResponse,DeGiay> deGiayService = new ViewDeGiayServiceImpl();
+    private ICommon<ViewDeGiayResponse,DeGiay> deGiayService = new DeGiayServiceImpl();
  
     public ViewDeGiay() {
         initComponents();

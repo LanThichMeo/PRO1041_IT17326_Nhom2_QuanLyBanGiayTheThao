@@ -3,14 +3,14 @@ package com.poly.it17326.group2.view;
 import com.poly.it17326.group2.domainmodel.NhaCungCap;
 import com.poly.it17326.group2.response.ViewNhaCungCapResponse;
 import com.poly.it17326.group2.service.ICommon;
-import com.poly.it17326.group2.service.impl.ViewNhaCungCapServiceImpl;
+import com.poly.it17326.group2.service.impl.NhaCungCapServiceImpl;
 import java.util.List;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
 public class ViewNhaCungCap extends javax.swing.JFrame {
 
-    private ICommon<ViewNhaCungCapResponse,NhaCungCap> nhaCungCapService = new ViewNhaCungCapServiceImpl();
+    private ICommon<ViewNhaCungCapResponse,NhaCungCap> nhaCungCapService = new NhaCungCapServiceImpl();
 
     public ViewNhaCungCap() {
         initComponents();

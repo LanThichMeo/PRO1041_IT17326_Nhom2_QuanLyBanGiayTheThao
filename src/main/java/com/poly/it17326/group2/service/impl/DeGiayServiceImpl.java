@@ -15,7 +15,7 @@ import com.poly.it17326.group2.service.ICommon;
  *
  * @author nguye
  */
-public class ViewDeGiayServiceImpl implements ICommon<ViewDeGiayResponse,DeGiay>{
+public class DeGiayServiceImpl implements ICommon<ViewDeGiayResponse,DeGiay>{
     private DeGiayRepository deGiayRepository = new DeGiayRepository();
     
     @Override

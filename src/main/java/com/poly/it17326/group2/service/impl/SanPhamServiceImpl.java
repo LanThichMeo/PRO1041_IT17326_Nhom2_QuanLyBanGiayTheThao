@@ -1,6 +1,6 @@
-
 package com.poly.it17326.group2.service.impl;
 //
+
 import com.poly.it17326.group2.domainmodel.SanPham;
 import com.poly.it17326.group2.repository.SanPhamRepository;
 import com.poly.it17326.group2.response.ViewSanPhamResponse;
@@ -8,10 +8,10 @@ import com.poly.it17326.group2.service.ICommon;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SanPhamServiceImpl implements ICommon<ViewSanPhamResponse, SanPham>{
+public class SanPhamServiceImpl implements ICommon<ViewSanPhamResponse, SanPham> {
 
     private SanPhamRepository sanPhamRepository = new SanPhamRepository();
-    
+
     @Override
     public List<ViewSanPhamResponse> getAll() {
         List<ViewSanPhamResponse> response = new ArrayList<>();
@@ -25,17 +25,17 @@ public class SanPhamServiceImpl implements ICommon<ViewSanPhamResponse, SanPham>
 
     @Override
     public Boolean create(SanPham y) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return sanPhamRepository.add(y);
     }
 
     @Override
     public Boolean update(SanPham y) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return sanPhamRepository.add(y);
     }
 
     @Override
     public Boolean delete(String id) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return sanPhamRepository.delete(id);
     }
-    
+
 }

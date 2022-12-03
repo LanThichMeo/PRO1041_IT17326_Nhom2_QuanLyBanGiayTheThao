@@ -15,7 +15,7 @@ import java.util.List;
  *
  * @author PC
  */
-public class ViewThuongHieuServiceImpl implements ICommon<ViewThuongHieuReposponse, ThuongHieu> {
+public class ThuongHieuServiceImpl implements ICommon<ViewThuongHieuReposponse, ThuongHieu> {
 
     private ThuongHieuRepository thuongHieuRepository = new ThuongHieuRepository();
 

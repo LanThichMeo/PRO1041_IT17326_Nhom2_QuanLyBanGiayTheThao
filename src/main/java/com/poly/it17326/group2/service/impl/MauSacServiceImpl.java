@@ -15,7 +15,7 @@ import java.util.List;
  *
  * @author phuongktph26630
  */
-public class ViewMauSacServiceImpl implements ICommon<ViewMauSacReponse, MauSac> {
+public class MauSacServiceImpl implements ICommon<ViewMauSacReponse, MauSac> {
 
     private MauSacRepository sizeRepository = new MauSacRepository();
 

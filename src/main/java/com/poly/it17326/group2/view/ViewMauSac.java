@@ -7,7 +7,7 @@ package com.poly.it17326.group2.view;
 import com.poly.it17326.group2.domainmodel.MauSac;
 import com.poly.it17326.group2.response.ViewMauSacReponse;
 import com.poly.it17326.group2.service.ICommon;
-import com.poly.it17326.group2.service.impl.ViewMauSacServiceImpl;
+import com.poly.it17326.group2.service.impl.MauSacServiceImpl;
 import java.util.List;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
@@ -19,7 +19,7 @@ import javax.swing.table.DefaultTableModel;
 public class ViewMauSac extends javax.swing.JFrame {
 
    private DefaultTableModel defaultTableModel = new DefaultTableModel();
-    private ICommon<ViewMauSacReponse, MauSac> sizeService = new ViewMauSacServiceImpl();
+    private ICommon<ViewMauSacReponse, MauSac> sizeService = new MauSacServiceImpl();
     public ViewMauSac() {
         initComponents();
     }

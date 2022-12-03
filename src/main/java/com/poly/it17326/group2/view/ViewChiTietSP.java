@@ -21,10 +21,10 @@ import com.poly.it17326.group2.service.impl.BanHangServiceImpl;
 import com.poly.it17326.group2.service.impl.ChiTietSPServiceImpl;
 import com.poly.it17326.group2.service.impl.SanPhamServiceImpl;
 import com.poly.it17326.group2.service.impl.SizeServiceImpl;
-import com.poly.it17326.group2.service.impl.ViewDeGiayServiceImpl;
-import com.poly.it17326.group2.service.impl.ViewMauSacServiceImpl;
-import com.poly.it17326.group2.service.impl.ViewNhaCungCapServiceImpl;
-import com.poly.it17326.group2.service.impl.ViewThuongHieuServiceImpl;
+import com.poly.it17326.group2.service.impl.DeGiayServiceImpl;
+import com.poly.it17326.group2.service.impl.MauSacServiceImpl;
+import com.poly.it17326.group2.service.impl.NhaCungCapServiceImpl;
+import com.poly.it17326.group2.service.impl.ThuongHieuServiceImpl;
 import java.awt.Image;
 import java.math.BigDecimal;
 import java.text.SimpleDateFormat;
@@ -45,15 +45,15 @@ public class ViewChiTietSP extends javax.swing.JFrame {
 
     private ICommon<ViewSizeReponse, Size> sizeService = new SizeServiceImpl();
 
-    private ICommon<ViewNhaCungCapResponse, NhaCungCap> nccService = new ViewNhaCungCapServiceImpl();
+    private ICommon<ViewNhaCungCapResponse, NhaCungCap> nccService = new NhaCungCapServiceImpl();
 
-    private ICommon<ViewDeGiayResponse, DeGiay> deGiayService = new ViewDeGiayServiceImpl();
+    private ICommon<ViewDeGiayResponse, DeGiay> deGiayService = new DeGiayServiceImpl();
 
-    private ICommon<ViewNhaCungCapResponse, NhaCungCap> nhaCungCapService = new ViewNhaCungCapServiceImpl();
+    private ICommon<ViewNhaCungCapResponse, NhaCungCap> nhaCungCapService = new NhaCungCapServiceImpl();
 
-    private ICommon<ViewThuongHieuReposponse, ThuongHieu> thuongHieuService = new ViewThuongHieuServiceImpl();
+    private ICommon<ViewThuongHieuReposponse, ThuongHieu> thuongHieuService = new ThuongHieuServiceImpl();
 
-    private ICommon<ViewMauSacReponse, MauSac> mauSacService = new ViewMauSacServiceImpl();
+    private ICommon<ViewMauSacReponse, MauSac> mauSacService = new MauSacServiceImpl();
 
     private ICommon<ViewSanPhamResponse, SanPham> sanPhamService = new SanPhamServiceImpl();
 
